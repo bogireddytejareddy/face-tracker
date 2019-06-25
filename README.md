@@ -15,6 +15,9 @@ mkdir meta
 ### Step 3: Run the program
 python face_tracker.py --detector RetinaFaceDetector --gpu -1 --videopath ./videos/test.mp4
 
+### Results
+![tracking-result](https://github.com/bogireddytejareddy/face-tracker/blob/master/result.gif)
+
 ## References :
 @inproceedings{Bewley2016_sort,
   author={Bewley, Alex and Ge, Zongyuan and Ott, Lionel and Ramos, Fabio and Upcroft, Ben},
