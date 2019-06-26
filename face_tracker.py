@@ -143,7 +143,7 @@ def read_detect_track_faces(videopath, facedetector, display=True):
                 tracker = tracker.astype(np.int32)
                 ax1.add_patch(patches.Rectangle((tracker[0], tracker[1]), tracker[2] - tracker[0], tracker[3] - tracker[1],
                 fill=False, lw=3, ec=colours[tracker[4]%32, :]))
-                plt.text(tracker[2] , tracker[3], 'Person ' + str(tracker[4]), fontsize=5, color=colours[tracker[4]%32, :])
+                plt.text(tracker[2] - 30, tracker[3] + 10, 'Person ' + str(tracker[4]), fontsize=5, color=colours[tracker[4]%32, :])
         
         if(display):
           fig.canvas.flush_events()
