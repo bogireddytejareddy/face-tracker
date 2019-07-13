@@ -1,19 +1,22 @@
 # Face Tracker using RetinaFace Detector and Kalman Filter
 
 ### Step 1: Clone insightface repository and Download weight files for RetinaFace Detector
+```Shell
 cd face-tracker
-<br>
 git clone https://github.com/deepinsight/insightface.git
-<br>
 export PYTHONPATH=$PYTHONPATH:(path to RetinaFace Directory)
+```
 
 ### Step 2: Create directories to store input videos and tracking meta
+```Shell
 mkdir videos
-<br>
 mkdir meta
+```
 
 ### Step 3: Run the program
+```Shell
 python face_tracker.py --detector RetinaFaceDetector --gpu -1 --videopath ./videos/test.mp4
+```
 
 ### Results
 ![tracking-result](https://github.com/bogireddytejareddy/face-tracker/blob/master/result.gif)
